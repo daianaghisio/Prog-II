@@ -1,11 +1,11 @@
 
-package tp1tupad;
+package tp1;
 import java.util.Scanner;
 /**
  *
  * @author Daiana Ghisio
  */
-public class TP1tupad {
+public class Ej234 {
  public static void main(String[] args) {
         //Ejercicio 2
         System.out.println("¡Hola, Java!");
