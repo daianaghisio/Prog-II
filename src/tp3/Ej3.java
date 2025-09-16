@@ -5,14 +5,13 @@ public class Ej3 {
     public static void main(String[] args) {
         Libro libro = new Libro("Cien Años de Soledad", "Gabriel García Márquez", 1967);
 
-        System.out.println("Libro creado:");
+        System.out.println("Libro: " + libro.getTitulo() + " - " + libro.getAutor() + " (" + libro.getAnioPublicacion() + ")");
+
+        // Intento modificar con un valor inválido
+        libro.setAnioPublicacion(1400);
         System.out.println(libro.getTitulo() + " - " + libro.getAutor() + " (" + libro.getAnioPublicacion() + ")");
 
-        // Intentar modificar con un valor inválido
-        libro.setAnioPublicacion(1400); // fuera de rango
-        System.out.println(libro.getTitulo() + " - " + libro.getAutor() + " (" + libro.getAnioPublicacion() + ")");
-
-        // Modificar con un valor válido
+        // Intento modificar con un valor válido
         libro.setAnioPublicacion(2010);
         System.out.println(libro.getTitulo() + " - " + libro.getAutor() + " (" + libro.getAnioPublicacion() + ")");
     }
